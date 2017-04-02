@@ -1,0 +1,327 @@
+.screen1 {
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  .social {
+    left: 1%;
+    position: fixed;
+    a {
+      margin-bottom: 10px;
+      display: block;
+      svg {
+        text-align: center;
+      }
+      &:hover {
+        svg * {
+          fill: $red_color;
+        }
+      }
+    }
+  }
+  .section__title-left {
+    margin-bottom: 30px;
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  &__btn-big {
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+  }
+  .macbook {
+    width: 906px;
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    right: -200px;
+    top: 55px;
+    .mackbook-img {
+      position: absolute;
+      left: 102px;
+      top: 31px;
+      width: 548px;
+      height: 342px;
+      .macbook-slide1 {
+        img {
+          width: 100%;
+        }
+      }
+      .macbook-slide2 {
+        .macbook-form {
+          .form-comment-title {
+            font-size: 18px;
+            margin: 20px 10px;
+          }
+          form {
+            padding: 20px 110px;
+          }
+        }
+      }
+    }
+    .mackbook-content {
+      position: relative;
+      width: 750px;
+      img {
+        width: 750px;
+      }
+    }
+  }
+}
+.screen2 {
+  background: url(../../img/bg-scr2.jpg) center no-repeat;
+  min-height: 531px;
+  &__item {
+    text-align: center;
+    &-img {
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+      position: relative;
+      margin: 10px auto 30px;
+      width: 140px;
+      height: 140px;
+      background: #ffffff;
+      svg {
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 95%;
+        max-height: 95%;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        & * {
+          fill: $main_font_color;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        svg * {
+          fill: $red_color;
+        }
+      }
+    }
+    &-text {
+      margin: 0 50px;
+    }
+  }
+}
+.screen3 {
+  &__item {
+    &-img {
+      position: relative;
+      margin: 10px auto 30px;
+      width: 500px;
+      height: 500px;
+      background: url("../../img/scr3-substrate.png") center no-repeat;
+      & > img {
+          text-align: center;
+          top: 5px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          max-width: 95%;
+          max-height: 95%;
+          position: absolute;
+      }
+      .parallax-img-3 {
+        img {
+          position: absolute;
+          left: 350px;
+          top: 50px;
+        }
+      }
+      .parallax-img-2 {
+        img {
+          position: absolute;
+          left: 250px;
+          top: 120px;
+        }
+      }
+      .card {
+        .sloy3 {
+          top: 0;
+          left: 20px;
+          z-index: 5;
+        }
+        .sloy2 {
+          top: 60px;
+          left: -35px;
+          z-index: 2;
+        }
+        .sloy1 {
+          top: 125px;
+          left: -105px;
+          z-index: 1;
+        }
+        img {
+          text-align: center;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          max-width: 95%;
+          max-height: 95%;
+          position: absolute;
+        }
+      }
+    }
+    &-title {
+      margin: 150px 0 25px;
+      font-size: 30px;
+      color: $red_color;
+    }
+    &-text {
+      line-height: 24px;
+    }
+  }
+}
+.screen4 {
+  background: url(../../img/bg-scr4.jpg) center no-repeat;
+  min-height: 660px;
+  &__item {
+    text-align: center;
+    &-img {
+      position: relative;
+      margin: 10px auto 20px;
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.2);
+        text-align: center;
+        margin: auto;
+      }
+    }
+    &-text {
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      &:after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 100%;
+        width: 100px;
+        height: 1px;
+        background: $red_color;
+      }
+    }
+  }
+}
+.screen5 {
+  .klient-items {
+    margin-bottom: 50px;
+    .klient-item {
+      opacity: 0.6;
+      text-align: center;
+      cursor: pointer;
+      img{
+        max-width: 100%;
+      }
+      &:hover {
+        opacity: 1;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+}
+.screen6 {
+  background: url(../../img/bg-scr6.2.jpg) center no-repeat;
+  min-height: 675px;
+  padding-top: 90px;
+  .section__title-left {
+    position: relative;
+    margin-bottom: 50px;
+    .red-arrow {
+      position: absolute;
+      top: 80px;
+    }
+  }
+  &__mini-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__logo-descr {
+    padding-right: 50px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  &__metrics-descr {
+    padding-right: 50px;
+    line-height: 24px;
+    font-size: 16px;
+    ul {
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+  }
+  .red-descr {
+    color: $red_color;
+  }
+  .form-comment {
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    padding: 30px 30px 50px;
+    background: #ffffff;
+    .btn-red {
+      width: 100%;
+    }
+  }
+  .form-comment-title {
+    font-size: 18px;
+    margin: 10px 0 30px;
+  }
+}
+.screen8 {
+  background: url(../../img/bg-scr8.jpg) center no-repeat;
+  min-height: 623px;
+  &__block {
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    padding: 0 70px;
+    margin: 40px auto 0;
+    width: 83.33333%;
+    background: #ffffff;
+    height: 430px;
+    .section__title {
+      padding-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.screen9 {
+  &__item {
+    text-align: center;
+    &-img {
+      position: relative;
+      margin: 10px auto 20px;
+      width: 100%;
+      height: auto;
+      a {
+        display: inline-block;
+        svg {
+          text-align: center;
+        }
+        &:hover {
+          svg * {
+            fill: $red_color;
+          }
+        }
+      }
+    }
+    &-text {
+
+    }
+  }
+}

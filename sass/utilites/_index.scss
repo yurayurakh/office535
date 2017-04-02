@@ -1,0 +1,38 @@
+$main_font_size: 16px;
+$main_font_color: #333333;
+$main_font_family: RalewayRegular;
+$bebasBold: BebasBold;
+$main_font_weight: RalewayBold;
+$bg_color: #ffffff;
+$red_color: #fc3103;
+$border_color: #797979;
+$form_bg: #f9f9f9;
+
+
+@font-face {
+  font-family: Exo-2-Regular;
+  src: url("../../font/Exo-2-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url("../../font/RalewayBold/RalewayBold.eot");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url("../../font/RalewayRegular/RalewayRegular.eot");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: BebasBold;
+  src: url("../../font/BebasBold/BebasBold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}

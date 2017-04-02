@@ -1,0 +1,21 @@
+.footer {
+  background: #333333;
+  padding: 25px 0;
+  color: #ffffff;
+  &__addres {
+    text-align: center;
+    margin-bottom: 10px;
+    a {
+      color: #ffffff;
+    }
+  }
+  &__copyright {
+    text-align: center;
+  }
+  .question-title {
+    text-align: right;
+  }
+  .question-btn {
+    text-align: right;
+  }
+}

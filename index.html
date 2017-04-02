@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web-студия "Office 535" - разработка веб-сайтов под ключ</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+	<!— Yandex.Metrika counter —>
+	<script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter43052824 = new Ya.Metrika({
+                        id:43052824,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/43052824" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!— /Yandex.Metrika counter —>
+</head>
+<body>
+	<div class="modal fade modal-order" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button" data-dismiss="modal">x</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-list-title">
+					<p>Оставьте заявку</p>
+					<span>и мы свяжемся с вами в течении 15 минут</span>
+				</div>
+				<div class="form-comment">
+					<form role="form" method="post">
+						<div class="form-group">
+							<label for="inputName2">
+								<img class="input-icon" src="img/icon/from-name.png" alt="">
+								<input type="text" name="name" class="form-control" id="inputName2" placeholder="Введите Ваше имя">
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="inputTel2">
+								<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+								<input type="email" name="email" class="form-control" id="inputTel2" placeholder="Контактный e-mail">
+							</label>
+						</div>
+						<div class="form-comment-btn">
+							<button type="submit" class="btn btn-default btn-red">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="modal fade modal-order-social" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-list-title">
+						<p>Оставьте заявку</p>
+						<span>и мы свяжемся с вами в течении 15 минут</span>
+					</div>
+					<div class="form-comment">
+						<form role="form" method="post">
+							<div class="form-group">
+								<label for="inputName3">
+									<img class="input-icon" src="img/icon/from-name.png" alt="">
+									<input type="text" name="name" class="form-control" id="inputName3" placeholder="Введите Ваше имя">
+								</label>
+							</div>
+							<div class="form-group">
+								<label for="inputTel3">
+									<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+									<input type="email" name="email" class="form-control" id="inputTel3" placeholder="Контактный e-mail">
+								</label>
+							</div>
+							<input type="hidden" name="type-form" value="social">
+							<div class="form-comment-btn">
+								<button type="submit" class="btn btn-default btn-red">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-order-ad" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-list-title">
+						<p>Оставьте заявку</p>
+						<span>и мы свяжемся с вами в течении 15 минут</span>
+					</div>
+					<div class="form-comment">
+						<form role="form" method="post">
+							<div class="form-group">
+								<label for="inputName4">
+									<img class="input-icon" src="img/icon/from-name.png" alt="">
+									<input type="text" name="name" class="form-control" id="inputName4" placeholder="Введите Ваше имя">
+								</label>
+							</div>
+							<div class="form-group">
+								<label for="inputTel4">
+									<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+									<input type="email" name="email" class="form-control" id="inputTel4" placeholder="Контактный e-mail">
+								</label>
+							</div>
+							<input type="hidden" name="type-form" value="ad">
+							<div class="form-comment-btn">
+								<button type="submit" class="btn btn-default btn-red">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-order-target" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-list-title">
+						<p>Оставьте заявку</p>
+						<span>и мы свяжемся с вами в течении 15 минут</span>
+					</div>
+					<div class="form-comment">
+						<form role="form" method="post">
+							<div class="form-group">
+								<label for="inputName5">
+									<img class="input-icon" src="img/icon/from-name.png" alt="">
+									<input type="text" name="name" class="form-control" id="inputName5" placeholder="Введите Ваше имя">
+								</label>
+							</div>
+							<div class="form-group">
+								<label for="inputTel5">
+									<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+									<input type="email" name="email" class="form-control" id="inputTel5" placeholder="Контактный e-mail">
+								</label>
+							</div>
+							<input type="hidden" name="type-form" value="target">
+							<div class="form-comment-btn">
+								<button type="submit" class="btn btn-default btn-red">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close close-modal" type="button" data-dismiss="modal">x</button>
+				</div>
+				<div class="modal-body">
+					<div class="row form-list-forms">
+						<form class="form-inline" method="post">
+							<div class ="success">
+								<p>Спасибо за заявку! </p>
+								<span>Наш менеджер свяжется с Вами!</span>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+					<button data-toggle="modal" data-target="#myModal" >Сохранить изменения</button></div>
+				<!--Button click when form send data -->
+				<button data-toggle="modal" data-target="#successModal" class="success-modal">Сохранить изменения</button>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header" id="home">
+			<div class="container">
+				<div class="col-md-2 col-sm-6">
+					<div class="header__logo">
+						<a href="/" class="logo">
+							<img src="/img/logo/main.png" alt="Логотип" class="logo__pic">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-7 hidden-sm">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#about-us" class="nav__item_link scrollto">
+									<div class="nav__item-title">О нас</div>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#klient" class="nav__item_link scrollto">
+									<div class="nav__item-title">Наши клиенты</div>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#surprise" class="nav__item_link scrollto">
+									<div class="nav__item-title">Подарок</div>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__item_link scrollto">
+									<div class="nav__item-title">Контакты</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="header__order">
+						<a data-toggle="modal" data-target=".modal-order" href="#" class="order-btn">
+							Сделать заказ
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="screen1">
+			<div class="social hidden-md hidden-sm hidden-xs">
+				<a href="https://vk.com/write414872789" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="40px" height="40px">
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M341.098,251.727c10.445,10.19,21.49,19.784,30.865,31.049  c4.142,4.978,8.06,10.113,11.046,15.881c4.239,8.264,0.397,17.318-6.985,17.817l-45.875-0.02  c-11.841,0.973-21.277-3.801-29.235-11.902c-6.328-6.45-12.243-13.354-18.352-20.023c-2.486-2.746-5.115-5.314-8.239-7.362  c-6.267-4.061-11.703-2.828-15.285,3.699c-3.643,6.649-4.499,14.031-4.835,21.435c-0.499,10.807-3.76,13.634-14.607,14.154  c-23.208,1.075-45.218-2.451-65.659-14.134c-18.052-10.307-32.022-24.879-44.184-41.356  c-23.702-32.124-41.855-67.391-58.154-103.673c-3.684-8.177-0.993-12.559,7.999-12.717c14.99-0.296,29.974-0.26,44.943-0.02  c6.089,0.102,10.129,3.582,12.458,9.334c8.101,19.906,18.01,38.85,30.448,56.427c3.327,4.677,6.71,9.334,11.504,12.636  c5.314,3.663,9.375,2.466,11.881-3.485c1.595-3.78,2.293-7.8,2.629-11.841c1.192-13.833,1.335-27.681-0.718-41.473  c-1.274-8.621-6.149-14.195-14.745-15.825c-4.382-0.836-3.725-2.446-1.615-4.958c3.704-4.315,7.189-7.006,14.093-7.006h51.847  c8.177,1.595,10.011,5.278,11.122,13.497l0.041,57.619c-0.097,3.184,1.595,12.615,7.306,14.704  c4.575,1.513,7.622-2.171,10.368-5.075c12.417-13.176,21.277-28.756,29.194-44.877c3.505-7.087,6.532-14.449,9.477-21.817  c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293  c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233  C331.087,237.201,331.683,242.535,341.098,251.727z" fill="#e0e0e0"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				</a>
+				<a href="skype:office535">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="40px" height="40px">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M285.828,224.324c-6.357-4.187-14.031-7.709-23.039-10.631   c-9.021-2.905-19.071-5.569-30.126-7.963c-8.82-2.069-15.177-3.64-19.005-4.716c-3.776-1.063-7.538-2.533-11.244-4.428   c-3.692-1.881-6.58-4.104-8.649-6.667c-2.034-2.529-3.041-5.499-3.058-9.021c0.017-5.622,2.975-10.408,9.161-14.543   c6.151-4.069,14.284-6.156,24.469-6.156c11.008-0.018,18.904,1.916,23.704,5.626c4.922,3.793,9.144,9.091,12.683,15.872   c2.8,4.874,5.381,8.361,7.844,10.566c2.529,2.271,6.169,3.329,10.815,3.329c5.145,0.017,9.555-1.829,13.007-5.469   c3.452-3.623,5.211-7.774,5.211-12.338c0-4.904-1.365-9.949-4.099-15.089c-2.717-5.145-7.039-10.032-12.902-14.682   c-5.88-4.646-13.265-8.356-22.098-11.161c-8.868-2.8-19.364-4.187-31.461-4.187c-15.159,0-28.389,2.104-39.615,6.326   c-11.261,4.204-19.911,10.268-25.891,18.182c-5.963,7.879-8.956,16.953-8.956,27.086c0,10.631,2.822,19.604,8.492,26.814   c5.657,7.162,13.296,12.819,22.886,16.953c9.586,4.139,21.411,7.726,35.547,10.802c10.526,2.222,18.935,4.323,25.191,6.322   c6.234,1.951,11.261,4.769,15.159,8.479c3.841,3.64,5.723,8.321,5.723,14.219c0,7.398-3.487,13.519-10.749,18.541   c-7.21,4.992-16.647,7.503-28.333,7.503c-8.531,0-15.347-1.229-20.475-3.71c-5.18-2.476-9.178-5.639-12.014-9.432   c-2.857-3.828-5.556-8.632-8.033-14.389c-2.052-4.957-4.581-8.715-7.591-11.296c-3.041-2.599-6.751-3.898-11.091-3.898   c-5.298,0-9.774,1.658-13.261,4.974c-3.434,3.299-5.211,7.332-5.211,11.961c0,7.88,2.853,15.947,8.509,24.185   c5.622,8.238,12.954,14.831,21.976,19.753c12.718,6.891,28.814,10.29,48.265,10.29c16.236,0,30.284-2.494,42.175-7.521   c11.878-4.988,20.952-11.944,27.138-20.847c6.186-8.89,9.297-18.922,9.279-30.096c0-9.262-1.776-17.141-5.364-23.586   C297.229,233.839,292.219,228.511,285.828,224.324z" fill="#e0e0e0"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M296.677,385c-17.019,0-32.896-4.834-46.379-13.143   c-7.433,1.181-15.054,1.781-22.816,1.781c-80.697,0-146.116-65.424-146.116-146.138c0-7.774,0.63-15.348,1.776-22.798   C74.821,191.201,70,175.341,70,158.322C70,109.528,109.546,70,158.323,70c17.019,0,32.896,4.821,46.362,13.142   c7.433-1.164,15.059-1.794,22.816-1.794c80.714,0,146.134,65.419,146.134,146.151c0,7.761-0.613,15.365-1.794,22.798   c8.339,13.484,13.16,29.361,13.16,46.384C385,345.454,345.454,385,296.677,385z" fill="#e0e0e0"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				</a>
+				<a href="http://telegram.me/office535">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="40px" height="40px">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136   c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981   c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959   C379.675,88.517,386.19,94.049,384.814,100.68z" fill="#e0e0e0"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068   l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822   C318.739,149.061,316.115,145.614,313.567,147.179z" fill="#e0e0e0"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				</a>
+			</div>
+			<div class="macbook hidden-md hidden-sm hidden-xs">
+				<div class="mackbook-content">
+					<img alt="" src="img/macbook2.png">
+				</div>
+				<div class="mackbook-img">
+					<div class="macbook-slide1">
+						<img alt="" src="img/macbook-img1.jpg">
+					</div>
+					<div class="macbook-slide2 hidden">
+						<div class="form-comment macbook-form">
+							<div class="form-comment-title">
+								Введите ваши данные,
+								мы свяжемся для рассчета
+								стоимости разработки:
+							</div>
+							<form role="form" method="post">
+								<div class="form-group">
+									<label for="inputNameMacbook">
+										<img class="input-icon" src="img/icon/from-name.png" alt="">
+										<input type="text" name="name" class="form-control" id="inputNameMacbook" placeholder="Введите Ваше имя">
+									</label>
+								</div>
+								<div class="form-group">
+									<label for="inputTelMacbook">
+										<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+										<input type="email" name="phone" class="form-control" id="inputTelMacbook" placeholder="Контактный e-mail">
+									</label>
+								</div>
+								<div class="form-comment-btn">
+									<button type="submit" class="btn btn-default btn-red">Рассчитать стоимость</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-lg-5">
+					<div class="row">
+						<div class="section__title-left">
+						<h2>
+							Разработаем для Вас<br>
+							Landing Page под ключ
+						</h2>
+					</div>
+						<div class="screen1__description">
+							Полное погружение в Ваш проект уже сегодня
+						</div>
+						<div class="screen1__btn-big">
+							<button type="button" class="btn btn-default btn-red hidden-md hidden-sm hidden-xs" id="macbookNextSlide">Узнать стоимость разработки своего Landing page</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen2" id="about-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section__title">
+							<h2>
+								Делаем качественно
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="screen2__item">
+							<div class="screen2__item-img">
+								<svg id="lnr-laptop-phone" viewBox="0 0 1024 1024"><title>laptop-phone</title><path class="path1" d="M588.8 716.8h-409.6c-42.347 0-76.8-34.451-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h665.6c42.349 0 76.8 34.453 76.8 76.8v51.2c0 14.138-11.461 25.6-25.6 25.6s-25.6-11.462-25.6-25.6v-51.2c0-14.115-11.485-25.6-25.6-25.6h-665.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h409.6c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path2" d="M588.8 921.6h-512c-42.347 0-76.8-34.453-76.8-76.8v-51.2c0-14.139 11.462-25.6 25.6-25.6h563.2c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6h-537.6v25.6c0 14.115 11.485 25.6 25.6 25.6h512c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z"></path><path class="path3" d="M947.2 921.6h-204.8c-42.347 0-76.8-34.453-76.8-76.8v-409.6c0-42.347 34.453-76.8 76.8-76.8h204.8c42.347 0 76.8 34.453 76.8 76.8v409.6c0 42.347-34.453 76.8-76.8 76.8zM742.4 409.6c-14.115 0-25.6 11.485-25.6 25.6v409.6c0 14.115 11.485 25.6 25.6 25.6h204.8c14.115 0 25.6-11.485 25.6-25.6v-409.6c0-14.115-11.485-25.6-25.6-25.6h-204.8z"></path><path class="path4" d="M844.8 819.2c-6.736 0-13.328-2.736-18.098-7.504-4.766-4.768-7.502-11.36-7.502-18.096s2.736-13.344 7.502-18.098c4.754-4.766 11.362-7.502 18.098-7.502s13.344 2.736 18.096 7.502c4.768 4.754 7.504 11.346 7.504 18.098 0 6.736-2.736 13.344-7.504 18.096-4.768 4.768-11.36 7.504-18.096 7.504z"></path></svg>
+							</div>
+							<div class="screen2__item-text">
+								Покажем ваш
+								товар или услугу
+								с лучшей стороны
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen2__item">
+							<div class="screen2__item-img">
+								<svg id="lnr-diamond" viewBox="0 0 1024 1024"><title>diamond</title><path class="path1" d="M967.68 368.64l-153.6-204.8c-3.95-5.267-9.776-8.81-16.272-9.891l-307.2-51.2c-2.786-0.464-5.632-0.464-8.418 0l-307.2 51.2c-6.494 1.082-12.322 4.626-16.27 9.891l-153.6 204.8c-7.339 9.786-6.731 23.395 1.451 32.486l460.8 512c4.856 5.394 11.771 8.474 19.029 8.474s14.173-3.080 19.029-8.475l460.8-512c8.182-9.091 8.79-22.699 1.451-32.485zM654.65 358.4l-168.25 462.691-168.251-462.691h336.501zM343.405 307.2l142.995-142.995 142.995 142.995h-285.99zM560.989 166.384l189.349 31.558-63.115 94.674-126.234-126.232zM285.579 292.616l-63.117-94.674 189.349-31.558-126.232 126.232zM239.096 315.194l-152.813 30.563 91.688-122.25 61.125 91.686zM265.058 362.216l152.285 418.784-342.642-380.712 190.357-38.072zM707.744 362.216l190.357 38.072-342.643 380.712 152.286-418.784zM733.704 315.194l61.125-91.688 91.688 122.25-152.813-30.562z"></path></svg>
+							</div>
+							<div class="screen2__item-text">
+								Отличим от множества
+								серых, шаблонных сайтов
+								ваших конкурентов
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen2__item">
+							<div class="screen2__item-img">
+								<svg id="lnr-select" viewBox="0 0 1024 1024"><title>select</title><path class="path1" d="M281.6 768h-204.8c-42.347 0-76.8-34.451-76.8-76.8v-614.4c0-42.347 34.453-76.8 76.8-76.8h716.8c42.349 0 76.8 34.453 76.8 76.8v358.4c0 14.138-11.461 25.6-25.6 25.6s-25.6-11.462-25.6-25.6v-358.4c0-14.115-11.485-25.6-25.6-25.6h-716.8c-14.115 0-25.6 11.485-25.6 25.6v614.4c0 14.115 11.485 25.6 25.6 25.6h204.8c14.138 0 25.6 11.461 25.6 25.6s-11.462 25.6-25.6 25.6z"></path><path class="path2" d="M665.608 1024.006c-10.16 0-19.773-6.090-23.776-16.099l-86.882-217.203-151.685 173.354c-7.022 8.027-18.285 10.859-28.269 7.106-9.986-3.75-16.597-13.298-16.597-23.963v-768c0-10.133 5.976-19.312 15.243-23.411 9.266-4.101 20.078-2.347 27.576 4.469l563.2 512c7.827 7.114 10.472 18.309 6.658 28.173s-13.301 16.37-23.877 16.37h-218.187l88.357 220.893c5.251 13.128-1.134 28.027-14.261 33.277l-128 51.2c-3.118 1.246-6.338 1.837-9.501 1.837zM563.198 716.8c1.432 0 2.874 0.12 4.31 0.366 8.781 1.501 16.152 7.456 19.459 15.726l92.893 232.232 80.462-32.184-92.893-232.232c-3.155-7.888-2.192-16.826 2.57-23.859s12.704-11.25 21.2-11.25h189.782l-471.382-428.53v641.997l134.334-153.525c4.904-5.606 11.954-8.742 19.264-8.742z"></path></svg>
+							</div>
+							<div class="screen2__item-text">
+								Принесем потенциальных
+								клиентов, что призведет
+								к росту продаж
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen3">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section__title">
+							<h2>
+								Используем передовые технологии интернет-маркетинга
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="screen3__item">
+						<div class="col-lg-5 hidden-md hidden-sm hidden-xs">
+							<div class="screen3__item-img">
+								<ul id="scene">
+									<li class="layer parallax-img-1" data-depth="0.60"><img src="img/oblako1.png"></li>
+									<li class="layer parallax-img-2" data-depth="1.40"><img src="img/oblako2.png"></li>
+									<li class="layer parallax-img-3" data-depth="2.00"><img src="img/oblako3.png"></li>
+								</ul>
+								<img src="img/scr3-img1-2.png" alt="icon1">
+							</div>
+						</div>
+						<div class="col-lg-6 col-lg-offset-1">
+							<div class="screen3__item-title">
+								Геотаргетинг
+							</div>
+							<div class="screen3__item-text">
+								Определяет откуда зашел посетитель и показывает информацию
+								именно под его город. Особенно актуально если Ваша услуга или
+								товар продаются в нескольких городах.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="screen3__item">
+						<div class="col-lg-6">
+							<div class="screen3__item-title">
+								Мультилендинг
+							</div>
+							<div class="screen3__item-text">
+								Эта функция изменит любой блок сайта под запрос из поисковой
+								системы. Показывает только нужную информацию
+								для вашей аудитории.
+							</div>
+						</div>
+						<div class="col-lg-5 col-lg-offset-1 hidden-md hidden-sm hidden-xs">
+							<div class="screen3__item-img">
+								<div class="card">
+									<img src="img/sloy3.png" class="sloy3 wow fadeInDown" data-wow-delay="0.3s" data-wow-offset="40"/>
+									<img src="img/sloy2.png" class="sloy2 wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="40"/>
+									<img src="img/sloy1.png" class="sloy1 wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="40"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="screen3__item">
+						<div class="col-lg-5 hidden-md hidden-sm hidden-xs">
+							<div class="screen3__item-img">
+								<img src="img/scr3-img3.png" class="wow zoomIn" alt="icon1">
+							</div>
+						</div>
+						<div class="col-lg-6 col-lg-offset-1">
+							<div class="screen3__item-title">
+								Анализ поведения посетителей на сайте
+							</div>
+							<div class="screen3__item-text">
+								Посредством интеграции Вашей страницы с сервисами глубокой аналитики,
+								мы сможем чётко отслеживать поведение пользователей на сайте и,
+								базируясь на этих данных, делать изменения в
+								Вашем Landing Page для многократного увеличения конверсии заявок.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen4">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section__title">
+							<h2>
+								А также мы делаем
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="screen4__item">
+							<div class="screen4__item-img">
+								<img src="img/scr4-img1.jpg" alt="">
+							</div>
+							<div class="screen4__item-text">
+								Оформление групп в соц. сетях
+							</div>
+							<div class="screen4__item-btn">
+								<button data-toggle="modal" data-target=".modal-order-social" type="submit" class="btn btn-default btn-red">Связаться с специалистом</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen4__item">
+							<div class="screen4__item-img">
+								<img src="img/scr4-img2.jpg" alt="">
+							</div>
+							<div class="screen4__item-text">
+								Настройка контекстной рекламы
+                                <br>Google Adwords и Яндекс Директ
+							</div>
+							<div class="screen4__item-btn">
+								<button data-toggle="modal" data-target=".modal-order-ad" type="submit" class="btn btn-default btn-red">Связаться с специалистом</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen4__item">
+							<div class="screen4__item-img">
+								<img src="img/scr4-img3.jpg" alt="">
+							</div>
+							<div class="screen4__item-text">
+								Таргетинг Вконтакте, Facebook
+							</div>
+							<div class="screen4__item-btn">
+								<button data-toggle="modal" data-target=".modal-order-target" type="submit" class="btn btn-default btn-red">Связаться с специалистом</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen5" id="klient">
+			<div class="container">
+				<div class="row">
+					<div class="section__title">
+						<h2>
+							С кем мы работаем
+						</h2>
+					</div>
+				</div>
+				<div class="row klient-items">
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient1.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient2.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient3.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient4.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient5.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient6.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row klient-items">
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient7.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient8.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient9.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient10.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient11.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="klient-item">
+							<img src="img/klient/klient12.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen6" id="surprise">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section__title-left">
+							<h2>
+								Подарок к каждому заказу
+							</h2>
+							<img class="red-arrow hidden-md hidden-sm hidden-sm" src="img/red-arrow.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-7">
+						<div class="screen6__mini-title">
+							Логотип и настройка метрики
+						</div>
+						<div class="screen6__logo-descr">
+							<p><span class="red-descr">Логотип</span>	 - важнейший элемент имиджа компании.
+								Он служит, в первую очередь, для идентификации
+								компании на рынке. Логотипы появились для того,
+								чтобы отличать продукцию различных фирм
+								в рамках одной отрасли.</p>
+						</div>
+						<div class="screen6__metrics-descr">
+							<span class="red-descr">Яндекс.Метрика</span>— это сервис веб-аналитики для
+							сайтов и электронной коммерции.
+							Он позволяет анализировать:
+							<ul>
+								<li> - аудиторию сайта и поведение посетителей;</li>
+								<li> - выручку и конверсию сайта;</li>
+								<li> - эффективность интернет и офлайн-рекламы;</li>
+								<li> - источники трафика;</li>
+								<li> - доступность сайта и скорость его работы.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-2 col-sm-5">
+						<div class="row">
+							<div class="form-comment">
+								<div class="form-comment-title">
+									Введите ваши данные,
+									мы свяжемся для уточнения
+									деталей проекта:
+								</div>
+								<form role="form" method="post">
+									<div class="form-group">
+										<label for="inputNameComment">
+											<img class="input-icon" src="img/icon/from-name.png" alt="">
+											<input type="text" name="name" class="form-control" id="inputNameComment" placeholder="Введите Ваше имя">
+										</label>
+									</div>
+									<div class="form-group">
+										<label for="inputTelComment">
+											<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+											<input type="email" name="phone" class="form-control" id="inputTelComment" placeholder="Контактный e-mail">
+										</label>
+									</div>
+									<div class="form-comment-btn">
+										<button type="submit" class="btn btn-default btn-red">Получить подарок</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen9" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section__title">
+							<h2>
+								Контакты
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="screen9__item">
+							<div class="screen9__item-img">
+								<a href="https://vk.com/write414872789" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="65px" height="65px">
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M341.098,251.727c10.445,10.19,21.49,19.784,30.865,31.049  c4.142,4.978,8.06,10.113,11.046,15.881c4.239,8.264,0.397,17.318-6.985,17.817l-45.875-0.02  c-11.841,0.973-21.277-3.801-29.235-11.902c-6.328-6.45-12.243-13.354-18.352-20.023c-2.486-2.746-5.115-5.314-8.239-7.362  c-6.267-4.061-11.703-2.828-15.285,3.699c-3.643,6.649-4.499,14.031-4.835,21.435c-0.499,10.807-3.76,13.634-14.607,14.154  c-23.208,1.075-45.218-2.451-65.659-14.134c-18.052-10.307-32.022-24.879-44.184-41.356  c-23.702-32.124-41.855-67.391-58.154-103.673c-3.684-8.177-0.993-12.559,7.999-12.717c14.99-0.296,29.974-0.26,44.943-0.02  c6.089,0.102,10.129,3.582,12.458,9.334c8.101,19.906,18.01,38.85,30.448,56.427c3.327,4.677,6.71,9.334,11.504,12.636  c5.314,3.663,9.375,2.466,11.881-3.485c1.595-3.78,2.293-7.8,2.629-11.841c1.192-13.833,1.335-27.681-0.718-41.473  c-1.274-8.621-6.149-14.195-14.745-15.825c-4.382-0.836-3.725-2.446-1.615-4.958c3.704-4.315,7.189-7.006,14.093-7.006h51.847  c8.177,1.595,10.011,5.278,11.122,13.497l0.041,57.619c-0.097,3.184,1.595,12.615,7.306,14.704  c4.575,1.513,7.622-2.171,10.368-5.075c12.417-13.176,21.277-28.756,29.194-44.877c3.505-7.087,6.532-14.449,9.477-21.817  c2.17-5.452,5.553-8.137,11.703-8.04l49.916,0.061c1.472,0,2.986,0,4.438,0.239c8.396,1.452,10.705,5.075,8.096,13.293  c-4.076,12.875-12.06,23.625-19.84,34.391c-8.341,11.525-17.216,22.647-25.495,34.233  C331.087,237.201,331.683,242.535,341.098,251.727z" fill="#e0e0e0"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+								</a>
+							</div>
+							<div class="screen9__item-text">
+								Вконтакте
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen9__item">
+							<div class="screen9__item-img">
+								<a href="skype:office535">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="65px" height="65px">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M285.828,224.324c-6.357-4.187-14.031-7.709-23.039-10.631   c-9.021-2.905-19.071-5.569-30.126-7.963c-8.82-2.069-15.177-3.64-19.005-4.716c-3.776-1.063-7.538-2.533-11.244-4.428   c-3.692-1.881-6.58-4.104-8.649-6.667c-2.034-2.529-3.041-5.499-3.058-9.021c0.017-5.622,2.975-10.408,9.161-14.543   c6.151-4.069,14.284-6.156,24.469-6.156c11.008-0.018,18.904,1.916,23.704,5.626c4.922,3.793,9.144,9.091,12.683,15.872   c2.8,4.874,5.381,8.361,7.844,10.566c2.529,2.271,6.169,3.329,10.815,3.329c5.145,0.017,9.555-1.829,13.007-5.469   c3.452-3.623,5.211-7.774,5.211-12.338c0-4.904-1.365-9.949-4.099-15.089c-2.717-5.145-7.039-10.032-12.902-14.682   c-5.88-4.646-13.265-8.356-22.098-11.161c-8.868-2.8-19.364-4.187-31.461-4.187c-15.159,0-28.389,2.104-39.615,6.326   c-11.261,4.204-19.911,10.268-25.891,18.182c-5.963,7.879-8.956,16.953-8.956,27.086c0,10.631,2.822,19.604,8.492,26.814   c5.657,7.162,13.296,12.819,22.886,16.953c9.586,4.139,21.411,7.726,35.547,10.802c10.526,2.222,18.935,4.323,25.191,6.322   c6.234,1.951,11.261,4.769,15.159,8.479c3.841,3.64,5.723,8.321,5.723,14.219c0,7.398-3.487,13.519-10.749,18.541   c-7.21,4.992-16.647,7.503-28.333,7.503c-8.531,0-15.347-1.229-20.475-3.71c-5.18-2.476-9.178-5.639-12.014-9.432   c-2.857-3.828-5.556-8.632-8.033-14.389c-2.052-4.957-4.581-8.715-7.591-11.296c-3.041-2.599-6.751-3.898-11.091-3.898   c-5.298,0-9.774,1.658-13.261,4.974c-3.434,3.299-5.211,7.332-5.211,11.961c0,7.88,2.853,15.947,8.509,24.185   c5.622,8.238,12.954,14.831,21.976,19.753c12.718,6.891,28.814,10.29,48.265,10.29c16.236,0,30.284-2.494,42.175-7.521   c11.878-4.988,20.952-11.944,27.138-20.847c6.186-8.89,9.297-18.922,9.279-30.096c0-9.262-1.776-17.141-5.364-23.586   C297.229,233.839,292.219,228.511,285.828,224.324z" fill="#e0e0e0"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M296.677,385c-17.019,0-32.896-4.834-46.379-13.143   c-7.433,1.181-15.054,1.781-22.816,1.781c-80.697,0-146.116-65.424-146.116-146.138c0-7.774,0.63-15.348,1.776-22.798   C74.821,191.201,70,175.341,70,158.322C70,109.528,109.546,70,158.323,70c17.019,0,32.896,4.821,46.362,13.142   c7.433-1.164,15.059-1.794,22.816-1.794c80.714,0,146.134,65.419,146.134,146.151c0,7.761-0.613,15.365-1.794,22.798   c8.339,13.484,13.16,29.361,13.16,46.384C385,345.454,345.454,385,296.677,385z" fill="#e0e0e0"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+								</a>
+							</div>
+							<div class="screen2__item-text">
+								Skype
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="screen9__item">
+							<div class="screen9__item-img">
+								<a href="http://telegram.me/office535">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve" width="65px" height="65px">
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M384.814,100.68l-53.458,257.136   c-1.259,6.071-8.378,8.822-13.401,5.172l-72.975-52.981c-4.43-3.217-10.471-3.046-14.712,0.412l-40.46,32.981   c-4.695,3.84-11.771,1.7-13.569-4.083l-28.094-90.351l-72.583-27.089c-7.373-2.762-7.436-13.171-0.084-16.003L373.36,90.959   C379.675,88.517,386.19,94.049,384.814,100.68z" fill="#e0e0e0"/>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M313.567,147.179l-141.854,87.367c-5.437,3.355-7.996,9.921-6.242,16.068   l15.337,53.891c1.091,3.818,6.631,3.428,7.162-0.517l3.986-29.553c0.753-5.564,3.406-10.693,7.522-14.522l117.069-108.822   C318.739,149.061,316.115,145.614,313.567,147.179z" fill="#e0e0e0"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+								</a>
+							</div>
+							<div class="screen9__item-text">
+								Telegram
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen8">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="screen8__block">
+							<div class="section__title">
+								<h2>
+									Оставить заявку на разработку landing page
+								</h2>
+							</div>
+							<div class="screen8__form-comment">
+								<div class="form-comment-title">
+									Введите данные, мы свяжемся в кратчайшее время для уточнения деталей проекта:
+								</div>
+								<div class="form-comment">
+									<form method="post">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="inputName">
+													<img class="input-icon" src="img/icon/from-name.png" alt="">
+													<input type="text" name="name" class="form-control" id="inputName" placeholder="Введите Ваше имя">
+												</label>
+											</div>
+											<div class="form-group">
+												<label for="inputTel">
+													<img class="input-icon form-small-icon" src="img/icon/from-email.png" alt="">
+													<input type="email" name="phone" class="form-control" id="inputTel" placeholder="Контактный e-mail">
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="apply_message">
+													<img class="input-icon" src="img/icon/from-message.png" alt="">
+													<textarea id="apply_message" name="message" placeholder="Введите Ваше сообщение"></textarea>
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-12">
+											<div class="form-comment-btn">
+												<button type="submit" class="btn btn-default btn-red">Отправить заявку</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="footer__logo">
+							<a href="#home" class="logo scrollto">
+								<img src="/img/logo/main-white.png" alt="Логотип" class="logo__pic">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="footer__addres">
+							<a href="#home" class="scrollto">www.office535.ru</a>
+						</div>
+						<div class="footer__copyright">
+							Office 535, 2016 - 2017 © All Rights Reserved
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer__question">
+							<div class="question-title">
+								Остались вопросы?
+							</div>
+							<div class="question-btn">
+								<a data-toggle="modal" data-target=".modal-order" href="#" class="order-btn">
+									Задать вопрос
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/scrirpt-scroll.js"></script>
+	<script src="js/macbook-slider.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+
+        new WOW().init();
+	</script>
+</body>
+</html>
